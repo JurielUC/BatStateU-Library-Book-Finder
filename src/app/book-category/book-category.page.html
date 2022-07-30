@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-title><!--<img src="./assets/BatStateU-NEU-Logo.png" alt="" width="20">-->Library Book Finder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+  <!--side navigation-->
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button class="nav-menu">
+      <ion-icon name="list-outline"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" [routerLink]="['/home']">
+        <img src="./assets/icons8-about-24.png" alt="">
+      </ion-fab-button>
+
+      <ion-fab-button color="light">
+        <ion-icon name="alert-circle-outline" [routerLink]="['/policy']"></ion-icon>
+      </ion-fab-button>
+      
+      <ion-fab-button color="medium">
+        <ion-icon name="reorder-four-outline" [routerLink]="['/book-category']"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button color="light">
+        <ion-icon name="home-outline" (click)="showLoading()" [routerLink]="['/main']"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!--Buttons for category-->
+  <div class="cat-button-div">
+    <p style="color: #800000; font-weight: bold; display: flex; justify-content: center;"><ion-icon name="file-tray-full-outline" style="height: 18px;"></ion-icon>Select Category</p>
+    <ion-button class="cat-button" (click)="showLoading()" [routerLink]="['/books-accounting']">Accountancy Books</ion-button>
+    <ion-button class="cat-button" (click)="showLoading()" [routerLink]="['/books-engineering']">Engineering Books</ion-button>
+    <ion-button class="cat-button" (click)="showLoading()" [routerLink]="['/books-it']">Information Technology Books</ion-button>
+    <ion-button class="cat-button" (click)="showLoading()" [routerLink]="['/books-law']">Law Books</ion-button>
+    <ion-button class="cat-button" (click)="showLoading()" [routerLink]="['/books-medtech']">Med Tech Books</ion-button>
+    <ion-button class="cat-button" (click)="presentAlert()">Psychology Books</ion-button>
+    <ion-button class="cat-button" (click)="presentAlert()">Education Books</ion-button>
+    <ion-button class="cat-button" (click)="presentAlert()">Business Ad Books</ion-button>
+    <ion-button class="cat-button" (click)="presentAlert()">NSTP Books</ion-button>
+    <ion-button class="cat-button" (click)="presentAlert()">GEd Books</ion-button>
+
+  </div>
+</ion-content>

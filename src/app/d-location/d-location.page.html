@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Library Book Finder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--Card Comp-->
+  <ion-card *ngIf="item">
+    <ion-img style="width: 75%; margin: auto;" [src]="item.location"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Location</ion-card-subtitle>
+      <ion-card-title>{{ item?.bookshelf }} - {{ item?.row }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Located at the <b>{{ item?.floor }}</b> of the library.
+    </ion-card-content>
+  </ion-card>
+
+  <!--  <ion-list *ngIf="item">
+      <ion-list-header class="list-header"> Location </ion-list-header>
+      <ion-item>
+        <ion-label class="label">Shelf No.</ion-label>
+        <ion-note slot="end" class="note">{{ item?.bookshelf }}</ion-note>
+      </ion-item>
+
+      <ion-item class="bgcolor">
+        <ion-label class="label">Shelf Row</ion-label>
+        <ion-note slot="end" class="note">{{ item?.bookshelf }}</ion-note>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label class="label">Floor</ion-label>
+        <ion-note slot="end" class="note">{{ item?.floor }}</ion-note>
+      </ion-item>
+      
+      <ion-item lines="none">
+        <ion-img style="width: 75%; margin: auto;" [src]="item.location"></ion-img>
+      </ion-item>
+    </ion-list> -->
+</ion-content>

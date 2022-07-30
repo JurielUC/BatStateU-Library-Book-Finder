@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="title">
+    <ion-title>
+      <!--<img src="./assets/BatStateU-NEU-Logo.png" alt="" width="20">-->
+      BatStateU Library Book Finder
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--This is the content of the landing page-->
+<ion-content [fullscreen]="true" class="ion-padding" scroll-y="false">
+
+  <!--the landing page is composed of three slides-->
+  <ion-slides pager="true">
+    <ion-slide>
+      <div class="slide">
+        <img class="slide-img" src="./assets/Library.jpg"/>
+        <h2>Welcome</h2>
+        <p>
+          The <b>Library Book Finder</b> is an application that allows students to find the location of the books they need inside the campus library.
+        </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <img class="slide-img" src="./assets/clip-art.png" />
+      <h2>Project Objective</h2>
+      <p>
+        <b>Library Book Finder App</b> aims to help students find books from the library easily.
+        In this application, the student can search or look for books and their location.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <a href="https://batstate-u.edu.ph/" target="_blank"><img src="./assets/BatStateU-NEU-Logo.png"/></a>
+      <h2 style="font-weight: bold;">Batangas State University <br> Library Book Finder</h2>
+      <ion-button fill="clear" (click)="showLoading()" [routerLink]="['/main']" style="color: #800000; font-weight: 700;">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

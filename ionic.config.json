@@ -1,0 +1,8 @@
+{
+  "name": "BatStateULBF",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

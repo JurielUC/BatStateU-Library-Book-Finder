@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-title><!--<img src="./assets/BatStateU-NEU-Logo.png" alt="" width="20">-->Library Book Finder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+
+  <!--side navigation-->
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button class="nav-menu">
+      <ion-icon name="list-outline"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      <!--Button to home-->
+      <ion-fab-button color="light" [routerLink]="['/home']">
+        <img src="./assets/icons8-about-24.png" alt="">
+      </ion-fab-button>
+      <!--Button to policy-->
+      <ion-fab-button color="light">
+        <ion-icon name="alert-circle-outline" [routerLink]="['/policy']"></ion-icon>
+      </ion-fab-button>
+      <!--Button to book category-->
+      <ion-fab-button (click)="showLoading()" color="light">
+        <ion-icon name="reorder-four-outline" [routerLink]="['/book-category']"></ion-icon>
+      </ion-fab-button>
+      <!--Button to main page/self-->
+      <ion-fab-button color="medium">
+        <ion-icon name="home-outline" [routerLink]="['/main']"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!-- Searchbar -->
+  <ion-searchbar #searchbar showCancelButton="focus" horizontal="top" slot="fixed" class="searchbar" (ionChange)="_ionChange($event)"></ion-searchbar>
+  
+  <ion-list id="list" class="list-margin">
+    <!--this ion-item shows the list of books-->
+    <ion-item *ngFor="let item of searchedItem" detail="true" tappable routerLink="/detail/{{ item.id }}">
+      <ion-label>
+        <h2 style="font-weight: bold;">{{ item.name }}</h2>
+        <h3>{{ item.author }}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

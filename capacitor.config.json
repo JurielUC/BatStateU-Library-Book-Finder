@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "GoogleAuth": {
+      "scopes": [
+        "profile",
+        "email"
+      ],
+      "serverClientId": "464918047798-efsvl5dah6vahlmp11d2budu15g1640r.apps.googleusercontent.com",
+      "forceCodeForfreshToken": true
+    }
+  }
+}

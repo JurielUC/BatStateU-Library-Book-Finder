@@ -1,0 +1,30 @@
+.title {
+    --background: #800000;
+    color: #ffffff;
+}
+  
+
+.label {
+    position: fixed;
+    font-weight: 700;
+}
+
+.list-header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    --background: gray;
+    color: #ffffff;
+}
+
+.note {
+    width: 50%;
+    font-size: 15px;
+}
+
+.bgcolor {
+    --background: #d9d9d9;
+}
+
+.loc-button {
+    --background: #800000;
+}

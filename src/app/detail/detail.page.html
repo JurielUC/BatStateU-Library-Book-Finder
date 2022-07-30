@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Library Book Finder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list *ngIf="item">
+      <ion-list-header class="list-header"> Book Details </ion-list-header>
+      <ion-item>
+        <ion-label class="label">Category</ion-label>
+        <ion-note slot="end" class="note">{{ item?.category }}</ion-note>
+      </ion-item>
+
+      <ion-item class="bgcolor">
+        <ion-label class="label">Title</ion-label>
+        <ion-note slot="end" class="note" style="font-weight: bold;">{{ item?.name }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="label">Author</ion-label>
+        <ion-note slot="end" class="note">{{ item?.author }}</ion-note>
+      </ion-item>
+
+      <ion-item class="bgcolor">
+        <ion-label class="label">Book No.</ion-label>
+        <ion-note slot="end" class="note">{{ item?.bookno }}</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="label">Shelf No.</ion-label>
+        <ion-note slot="end" class="note">{{ item?.bookshelf }}</ion-note>
+      </ion-item>
+
+      <ion-item class="bgcolor">
+        <ion-label class="label">Shelf Row</ion-label>
+        <ion-note slot="end" class="note">{{ item?.row }}</ion-note>
+      </ion-item>
+    </ion-list>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" style="background-color: #d9d9d9;" *ngIf="item">
+        <ion-button class="loc-button" (click)="showLoading()" d-location="true" tappable routerLink="/d-location/{{ item.id }}"><ion-icon name="location-outline"></ion-icon>View Location</ion-button>
+      </ion-tab-bar>
+    </ion-tabs>
+</ion-content>

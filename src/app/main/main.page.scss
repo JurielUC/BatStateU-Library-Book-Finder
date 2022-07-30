@@ -1,0 +1,33 @@
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.title {
+    --background: #800000;
+    color: #ffffff;
+}
+  
+.content {
+    --background: #ffffff;
+}
+
+.nav-menu {
+    --background: #800000;
+}
+
+.searchbar {
+    --background: #800000;
+    width: 100%;
+    margin-top: 4px;
+    position: fixed;
+    color: #ffffff;
+}
+
+.list-margin {
+    margin-top: 60px;
+}

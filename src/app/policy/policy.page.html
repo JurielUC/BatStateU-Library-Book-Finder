@@ -1,0 +1,171 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-title>Library Book Finder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+  <!--side navigation-->
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button class="nav-menu">
+      <ion-icon name="list-outline"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" [routerLink]="['/home']">
+        <img src="./assets/icons8-about-24.png" alt="">
+      </ion-fab-button>
+
+      <ion-fab-button color="medium">
+        <ion-icon name="alert-circle-outline" [routerLink]="['/policy']"></ion-icon>
+      </ion-fab-button>
+      
+      <ion-fab-button (click)="showLoading()" color="light">
+        <ion-icon name="reorder-four-outline" [routerLink]="['/book-category']"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button color="light">
+        <ion-icon name="home-outline" [routerLink]="['/main']"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!--do's and donts-->
+  <ion-list>
+    <ion-list-header style="font-size: 25px; font-weight: bold;">Library Policy</ion-list-header>
+    <ion-item lines="none">
+      <ion-note style="font-weight: bold; font-size: 15px;">Do's and Don'ts inside the library</ion-note>
+    </ion-item>
+
+    <ion-item-group class="item-group">
+      <ion-item-divider>
+        <ion-label style="font-size: 22px; font-weight: bold;">Do's</ion-label>
+      </ion-item-divider>
+
+      <ion-item>
+        <ion-note class="note">Do make use of the Library, the treasure of knowledge.</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do switch your mobile to silent</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please sign in the visitors’ register each time the user enters the library</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please carry ID card to the library to produce when needed</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please return issued books in time to avoid overdue charges</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please work with your friends on homework or projects if you need to, but please do it quietly so as not to disturb others who visit library for the same purpose.</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please treat library with respect, and leave it clean and orderly</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please save your files , as computers sometimes freeze and your work will be lost if you don't save it first</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Use Library PCs only for research/academic works</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do ask for help if you need when using computers.</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Always ask for what you want</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Respect Library Rules and Regulations</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Use bins</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Use book markers</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do leave the books on table after reference work is completed</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">It's your Library, so DO respect Library property and do your part to keep library neat and clean.</ion-note>
+      </ion-item>
+      <br><br>
+      <ion-item-divider>
+        <ion-label style="font-size: 22px; font-weight: bold;">Don'ts</ion-label>
+      </ion-item-divider>
+
+      <ion-item>
+        <ion-note class="note">Do not bring food or drink into the library</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Don't make voice calls</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not use pen drive on systems provided in CDC(Library)</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Please do not carry other library/personal books</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not play games on computers</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not come in at the last minute and expect to get everything you need. You might be disappointed. It's much better to plan ahead, and set up a timeline for your work in library.</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Don't disturb others around you</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not sleep inside the Library</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not talk loudly or walk noisily inside the Library</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Don’t damage any library property and no pilferage</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">	Don't write anything in library books.</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Don’t keep the books in racks after reading</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not discuss inside library</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-note class="note">Do not try to keep the books in racks</ion-note>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+</ion-content>

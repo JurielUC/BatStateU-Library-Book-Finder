@@ -29,7 +29,7 @@ Pagkatapos niyan ay automatic nang madodownload ang mga codes/file dito sa Githu
 
 Maaarin mo itong buksan gamit ang iyong **Visual Studio Code**.
 
-Sa bawat changes sa code na gagawin mo ay makikita mo ito sa Github Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba para tuluyang magsave ang ginawa mong pagbabago dito sa Github.
+Sa bawat changes sa code na gagawin mo ay makikita mo ito sa Github Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba tapos **Push Origin** para tuluyang magsave ang ginawa mong pagbabago dito sa Github.
 
 Maaari mong icheck dito sa Github repository kung gumana ba ang iyong ginawang pagbabago.
 

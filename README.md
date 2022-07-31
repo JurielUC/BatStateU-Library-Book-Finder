@@ -30,7 +30,7 @@ Tapos iclick ang **'Clone'**.
 
 Pagkatapos niyan ay automatic nang madodownload ang mga codes/file dito sa Github repo na ito papunta sa iyong local GitHub path.
 
-Maaarin mo itong buksan gamit ang iyong **Visual Studio Code**. O sa GitHub desktop, piliin at iclick ang **'Open in Visual Studio Code'**
+Maaari mo itong buksan gamit ang iyong **Visual Studio Code**. O sa GitHub desktop, piliin at iclick ang **'Open in Visual Studio Code'**
 
 Sa bawat changes sa code na gagawin mo ay makikita mo ito sa Github Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba tapos **Push Origin** para tuluyang magsave ang ginawa mong pagbabago dito sa Github.
 

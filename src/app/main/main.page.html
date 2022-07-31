@@ -18,16 +18,16 @@
         <img src="./assets/icons8-about-24.png" alt="">
       </ion-fab-button>
       <!--Button to policy-->
-      <ion-fab-button color="light">
-        <ion-icon name="alert-circle-outline" [routerLink]="['/policy']"></ion-icon>
+      <ion-fab-button color="light"  [routerLink]="['/policy']">
+        <ion-icon name="alert-circle-outline"></ion-icon>
       </ion-fab-button>
       <!--Button to book category-->
-      <ion-fab-button (click)="showLoading()" color="light">
-        <ion-icon name="reorder-four-outline" [routerLink]="['/book-category']"></ion-icon>
+      <ion-fab-button (click)="showLoading()" color="light"  [routerLink]="['/book-category']">
+        <ion-icon name="reorder-four-outline"></ion-icon>
       </ion-fab-button>
       <!--Button to main page/self-->
-      <ion-fab-button color="medium">
-        <ion-icon name="home-outline" [routerLink]="['/main']"></ion-icon>
+      <ion-fab-button color="medium"  [routerLink]="['/main']">
+        <ion-icon name="home-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>

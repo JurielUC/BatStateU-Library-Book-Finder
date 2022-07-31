@@ -35,5 +35,8 @@ Maaarin mo itong buksan gamit ang iyong **Visual Studio Code**. O sa GitHub desk
 Sa bawat changes sa code na gagawin mo ay makikita mo ito sa Github Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba tapos **Push Origin** para tuluyang magsave ang ginawa mong pagbabago dito sa Github.
 
 Maaari mong icheck dito sa Github repository kung gumana ba ang iyong ginawang pagbabago.
+##
+
+Halimbawa naman collaboration ang project na ginagawa tulad nito. Kapag may ginawang changes si groupmate ay pindutin lang ang **'Fetch Origin'** sa itaas, tapos sunod na pindutin ang lalabas na **Pull**
 
 

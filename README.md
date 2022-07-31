@@ -37,6 +37,6 @@ Sa bawat changes sa code na gagawin mo ay makikita mo ito sa Github Desktop **'C
 Maaari mong icheck dito sa Github repository kung gumana ba ang iyong ginawang pagbabago.
 ##
 
-Halimbawa naman collaboration ang project na ginagawa tulad nito. Kapag may ginawang changes si groupmate ay pindutin lang ang **'Fetch Origin'** sa itaas, tapos sunod na pindutin ang lalabas na **Pull Origin** para makuha ang ginawang update ni groupmate papunta sa iyong local code.
+Halimbawa naman collaboration ang project na ginagawa tulad nito. Kapag may ginawang changes si groupmate ay pindutin lang ang **'Fetch Origin'** sa itaas ng GitHub Desktop, tapos sunod na pindutin ang lalabas na **Pull Origin** para makuha ang ginawang update ni groupmate papunta sa iyong local code.
 
 

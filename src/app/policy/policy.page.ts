@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-policy',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyPage implements OnInit {
 
-  constructor() { }
+  constructor(private loadingCtrl: LoadingController) { }
+
+  //code for loading
+  async showLoading() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Loading...',
+      duration: 1000,
+      spinner: 'circles'
+    });
+    
+    loading.present();
+  }
 
   ngOnInit() {
   }

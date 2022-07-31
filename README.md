@@ -8,6 +8,8 @@ Sunod na idownload ang Github Desktop. (Link: https://desktop.github.com/ )
 
 Maaaring panoorin ang step sa pag-install ng Git at Github. (Link: https://www.youtube.com/watch?v=8Dd7KRpKeaE&t=569s )
 
+Maaari mo ring idownload at gamitin ang Visual Studio Code bilang code editor. Di ko kase alam kung gumagana ito sa ibang IDE ^_^' (Link: https://code.visualstudio.com/download )
+
 ## What is Github Desktop?
 
 GitHub Desktop is an application that enables you to interact with GitHub using a GUI instead of the command line or a web browser. GitHub Desktop encourages you and your team to collaborate using best practices with Git and GitHub.

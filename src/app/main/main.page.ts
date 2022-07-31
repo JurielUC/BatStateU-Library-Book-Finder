@@ -44,7 +44,6 @@ export class MainPage implements OnInit {
 
   }
 
-
   _ionChange(event) {
     const val = event.target.value;
     //codes for searching books

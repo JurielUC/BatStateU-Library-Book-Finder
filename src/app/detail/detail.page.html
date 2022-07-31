@@ -43,7 +43,7 @@
 
     <ion-tabs>
       <ion-tab-bar slot="bottom" style="background-color: #d9d9d9;" *ngIf="item">
-        <ion-button class="loc-button" d-location="true" tappable routerLink="/d-location/{{ item.id }}"><ion-icon name="location-outline"></ion-icon>View Location</ion-button>
+        <ion-button class="loc-button" (click)="showLoading()" d-location="true" tappable routerLink="/d-location/{{ item.id }}"><ion-icon name="location-outline"></ion-icon>View Location</ion-button>
       </ion-tab-bar>
     </ion-tabs>
 </ion-content>

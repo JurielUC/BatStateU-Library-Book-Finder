@@ -26,14 +26,4 @@ export class DetailPage implements OnInit {
     this.item = this.itemService.getItem(itemId);
   }
 
-  async showLoading() {
-    const loading = await this.loadingCtrl.create({
-      message: 'Loading...',
-      duration: 1000,
-      spinner: 'circles'
-    });
-    
-    loading.present();
-  }
-
 }

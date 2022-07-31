@@ -8,14 +8,12 @@ import { DLocationPageRoutingModule } from './d-location-routing.module';
 
 import { DLocationPage } from './d-location.page'
 
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     DLocationPageRoutingModule,
-    PdfViewerModule
   ],
   declarations: [DLocationPage],
   entryComponents: [DLocationPage]

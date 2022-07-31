@@ -20,12 +20,12 @@
         <ion-icon name="alert-circle-outline" [routerLink]="['/policy']"></ion-icon>
       </ion-fab-button>
       
-      <ion-fab-button (click)="showLoading()" color="light">
-        <ion-icon name="reorder-four-outline" [routerLink]="['/book-category']"></ion-icon>
+      <ion-fab-button color="light">
+        <ion-icon name="reorder-four-outline" (click)="showLoading()" [routerLink]="['/book-category']"></ion-icon>
       </ion-fab-button>
 
       <ion-fab-button color="light">
-        <ion-icon name="home-outline" [routerLink]="['/main']"></ion-icon>
+        <ion-icon name="home-outline" (click)="showLoading()" [routerLink]="['/main']"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>

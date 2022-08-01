@@ -32,9 +32,9 @@ Pagkatapos niyan ay automatic nang madodownload ang mga codes/file dito sa GitHu
 
 Maaari mo itong buksan gamit ang iyong **Visual Studio Code**. O sa GitHub desktop, piliin at iclick ang **'Open in Visual Studio Code'**
 
-Sa bawat changes sa code na gagawin mo ay makikita mo ito sa GitHub Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba tapos **Push Origin** para tuluyang magsave ang ginawa mong pagbabago dito sa Github.
+Sa bawat changes sa code na gagawin mo ay makikita mo ito sa GitHub Desktop **'Changes'**. Ang gagawin mo lang ay iclick ang **'Commit to master'** sa ibaba tapos **Push Origin** para tuluyang magsave ang ginawa mong changes dito sa Github.
 
-Maaari mong icheck dito sa GitHub repository kung gumana ba ang iyong ginawang pagbabago.
+Maaari mong icheck dito sa GitHub repository kung gumana ba ang iyong ginawang changes.
 ##
 
 Halimbawa naman collaboration ang project na ginagawa tulad nito. Kapag may ginawang changes si groupmate ay pindutin lang ang **'Fetch Origin'** sa itaas ng GitHub Desktop, tapos sunod na pindutin ang lalabas na **Pull Origin** para makuha ang ginawang update ni groupmate papunta sa iyong local code.

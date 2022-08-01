@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'musicplayer',
     pathMatch: 'full'
   },
   {
@@ -51,6 +51,11 @@ const routes: Routes = [
     path: 'd-location/:id',
     loadChildren: () => import('./d-location/d-location.module').then( m => m.DLocationPageModule)
   },
+  {
+    path: 'musicplayer',
+    loadChildren: () => import('./musicplayer/musicplayer.module').then( m => m.MusicplayerPageModule)
+  },
+
 
 ];
 

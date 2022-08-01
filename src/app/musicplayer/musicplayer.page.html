@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-buttons slot="start" (click)="togglePlayer(true)">
+      <ion-back-button defaultHref="/book-category"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Music Player</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+  <!--Codes for songlist-->
+  <ion-list class="song-list">
+    <ion-item button [color]="track == activeTrack ? 'medium' : 'light'" *ngFor="let track of playlist" (click)="start(track)">
+      <ion-label [color]="track == activeTrack ? '' : 'dark'">{{ track.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!--codes for play, next, pause and progress bar-->
+  <ion-footer class="foot-loc" *ngIf="activeTrack">
+    <ion-toolbar class="tb-color">
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+          {{ activeTrack.name }}
+        </ion-col>
+  
+        <ion-col size="12">
+          <ion-range #range [(ngModel)]="progress" max="100" color="light" (touched)="seek()" (mouseup)="seek()"></ion-range>
+        </ion-col>
+  
+        <ion-col size="12" class="ion-text-center">
+
+          <ion-button fill="clear" (click)="prev()" color="light">
+            <ion-icon slot="icon-only" name="play-skip-back-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-button fill="clear" (click)="togglePlayer(false)" *ngIf="!isPlaying" color="light">
+            <ion-icon slot="icon-only" name="play"></ion-icon>
+          </ion-button>
+  
+          <ion-button fill="clear" (click)="togglePlayer(true)" *ngIf="isPlaying" color="light">
+            <ion-icon slot="icon-only" name="pause"></ion-icon>
+          </ion-button>
+  
+          <ion-button fill="clear" (click)="next()" color="light">
+            <ion-icon slot="icon-only" name="play-skip-forward-outline"></ion-icon>
+          </ion-button>
+
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>

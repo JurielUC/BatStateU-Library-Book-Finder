@@ -19,6 +19,10 @@
       <ion-fab-button color="medium" [routerLink]="['/policy']">
         <ion-icon name="alert-circle-outline"></ion-icon>
       </ion-fab-button>
+
+      <ion-fab-button (click)="showLoading()" color="light"  [routerLink]="['/musicplayer']">
+        <ion-icon name="musical-notes-outline"></ion-icon>
+      </ion-fab-button>
       
       <ion-fab-button color="light" [routerLink]="['/book-category']">
         <ion-icon name="reorder-four-outline" (click)="showLoading()"></ion-icon>

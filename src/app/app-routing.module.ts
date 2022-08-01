@@ -51,6 +51,7 @@ const routes: Routes = [
     path: 'd-location/:id',
     loadChildren: () => import('./d-location/d-location.module').then( m => m.DLocationPageModule)
   },
+
 ];
 
 @NgModule({

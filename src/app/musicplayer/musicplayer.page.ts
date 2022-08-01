@@ -13,7 +13,7 @@ export interface Track {
   styleUrls: ['./musicplayer.page.scss'],
 })
 export class MusicplayerPage implements OnInit {
-
+  //////////////////////////////////////////////////////////////////////////////////
   playlist: Track[] = [
     {
       name: 'Lofi Music 1',

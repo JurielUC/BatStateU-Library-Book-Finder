@@ -6,7 +6,7 @@ Idownload ang Git (Link: https://git-scm.com/download/win )
 
 Sunod na idownload ang GitHub Desktop. (Link: https://desktop.github.com/ )
 
-Maaaring panoorin ang step sa pag-install ng Git at GitHub. (Link: https://www.youtube.com/watch?v=8Dd7KRpKeaE&t=569s )
+Maaaring panoorin ang step sa pag-install ng Git at GitHub Desktop. (Link: https://www.youtube.com/watch?v=8Dd7KRpKeaE&t=569s )
 
 Maaari mo ring idownload at gamitin ang Visual Studio Code bilang code editor. Di ko kase alam kung gumagana ito sa ibang IDE ^_^' (Link: https://code.visualstudio.com/download )
 

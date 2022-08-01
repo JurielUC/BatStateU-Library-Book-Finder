@@ -15,7 +15,7 @@ Maaari mo ring idownload at gamitin ang Visual Studio Code bilang code editor. D
 GitHub Desktop is an application that enables you to interact with GitHub using a GUI instead of the command line or a web browser. GitHub Desktop encourages you and your team to collaborate using best practices with Git and GitHub.
 ##
 
-#### Mga gagawin pagkatapos i-set-up ang Git at Github.
+#### Mga gagawin pagkatapos i-set-up ang Git at GitHub Desktop.
 
 Pumunta sa GitHub Desktop at magsign-in gamit ang iyong GitHub account.
 

@@ -1,5 +1,5 @@
 # BatStateU-Library-Book-Finder
-#### IT331 and IT332 Final Project
+#### IT331 and IT332 Final Project - Mobile App (IONIC)
 
 Guide para sa Git.
 Idownload ang Git (Link: https://git-scm.com/download/win )
